@@ -29,7 +29,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-white/40 text-sm">
-          © {new Date().getFullYear()} Andrew. All rights reserved.
+          © {new Date().getFullYear()} Andrew Lugo. All rights reserved.
         </p>
 
       </div>
