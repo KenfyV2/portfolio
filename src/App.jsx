@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import { Footer, About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
@@ -25,6 +26,7 @@ const App = () => {
         <Footer />
       </div>
       <Analytics />
+      <SpeedInsights />
     </BrowserRouter>
   );
 };
