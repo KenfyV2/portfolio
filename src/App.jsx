@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 import { Footer, About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
@@ -23,6 +24,7 @@ const App = () => {
         </div>
         <Footer />
       </div>
+      <Analytics />
     </BrowserRouter>
   );
 };
