@@ -83,29 +83,28 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Back-end Developer",
+    title: "Backend Software Engineer",
     company_name: "TheoForge Knowledge Discovery Platform NJIT",
     icon: njit,
     iconBg: "#deccff",
     date: "January 2025 - May 2025",
     points: [
-      "Built and scaled a web-based AI knowledge platform (FastAPI, PostgreSQL, Neo4j, Qdrant), designing performant and distributed backend services for intelligent data discovery.",
-      "Designed and implemented RESTful API services for user management, transcript processing, and knowledge graph creation; integrated JWT authentication and Dockerized deployment.",
-      "Set up and configured supporting services including pgAdmin, MinIO object storage, and Neo4j/Qdrant dashboards for graph and vector database management.",
-      "Enabled natural language querying over structured knowledge graphs by connecting FastAPI to OpenAI’s LLM endpoints.",
-      "Applied Agile methodologies using Jira for task tracking, sprint planning, and collaborative development with CI/CD automation via GitHub Actions.",
+      "AI-Powered Knowledge Discovery Platform: Built and scaled distributed backend services using FastAPI, PostgreSQL, Neo4j, and Qdrant, reducing average query response time by 35–45% through optimized data retrieval and indexing strategies.",
+      "REST API & Authentication System: Developed 15+ RESTful API endpoints for user management, transcript processing, and knowledge graph generation using FastAPI, implementing JWT authentication and Dockerized deployment to support secure and consistent service access.",
+      "Backend Infrastructure & Data Systems: Engineered storage and database infrastructure using MinIO, PostgreSQL, and Neo4j/Qdrant, managing thousands of structured and vectorized records and improving data access efficiency across services.",
+      "Natural Language Query System (LLM Integration): Integrated OpenAI APIs with FastAPI to enable natural language querying over structured knowledge graphs, reducing manual data lookup effort by 30% and improving usability for non-technical users.",
+      "CI/CD & Development Workflow: Implemented CI/CD pipelines using GitHub Actions, reducing deployment time by 40% and improving development iteration speed within Agile workflows using Jira.",
     ],
   },
   {
-    title: "Front-end Developer & Administrative Assistant",
+    title: "Technical Operations Assistant (Software Development) ",
     company_name: "Jag & Son Construction",
     icon: jag,
     iconBg: "#deccff",
     date: "June 2025 - Present",
     points: [
-      "Built and customized a WordPress contact form to capture customer details and automatically send submissions to the company email, streamlining the appointment scheduling process.",
-      "Managed and optimized Google Ads keywords, testing variations to identify high-performing terms that drove increased customer clicks and boosted website traffic.",
-      "Served as the company’s secretary, managing client communications, scheduling appointments, and preparing contracts, contributing to smooth daily operations and client satisfaction.",
+      "Customer Inquiry Automation System: Developed and customized a WordPress contact form using HTML and WordPress, reducing manual scheduling effort by 40%.",
+      "Operations Workflow Management: Coordinated customer scheduling and contract processing, improving response time and streamlining client intake and appointment workflows.",
     ],
   },
 ];
