@@ -1,5 +1,5 @@
 import githubIcon from "../assets/github.png";
-import indeedIcon from "../assets/tech/linkedin.png";
+import linkedinIcon from "../assets/tech/linkedin.png";
 
 const Footer = () => {
   return (
@@ -8,7 +8,12 @@ const Footer = () => {
 
         {/* Icons + Resume */}
         <div className="flex items-center gap-5">
-          <a href="https://github.com/KenfyV2" target="_blank">
+          <a
+            href="https://github.com/KenfyV2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
             <img
               src={githubIcon}
               alt="GitHub"
@@ -16,15 +21,19 @@ const Footer = () => {
             />
           </a>
 
-
           <a
-            href="/resume.pdf"
+            href="https://www.linkedin.com/in/andrewlugo-dev/"
             target="_blank"
-            className="text-white border border-[#4700cc] px-4 py-1 rounded-md text-sm 
-            hover:bg-[#9c66ff] hover:shadow-[0_0_10px_#9c66ff] hover:scale-110 transition"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
-            Resume
+            <img
+              src={linkedinIcon}
+              alt="LinkedIn"
+              className="w-8 h-8 hover:scale-110 hover:drop-shadow-[0_0_6px_#9c66ff] transition"
+            />
           </a>
+
         </div>
 
         {/* Copyright */}
