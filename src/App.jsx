@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-import { Footer, About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { Footer, About, Contact, Experience, Hero, Navbar, Tech, Works } from "./components";
 
 const App = () => {
   return (
@@ -11,9 +11,9 @@ const App = () => {
         <Navbar />
         <Hero />
         <About />
-        <Experience />
         <Tech />
         <Works />
+        <Experience />
         <div
           className="relative z-0 w-full min-h-screen"
           style={{

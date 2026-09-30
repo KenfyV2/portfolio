@@ -32,7 +32,7 @@ const Contact = () => {
         from_name: form.name,
         to_name: "Andrew Lugo",
         from_email: form.email,
-        to_email: "Andrewlmw3@gmail.com",
+        to_email: "Andrew.Lugo.Dev@gmail.com",
         message: form.message,
       },
       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -66,6 +66,10 @@ const Contact = () => {
           <p className={styles.sectionSubText}>Get in Touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
 
+          <p className="mt-4 text-secondary leading-7">
+            Looking for an entry-level backend or full-stack developer? Reach me at{' '}
+            <a href="mailto:Andrew.Lugo.Dev@gmail.com" className="underline underline-offset-4 break-all hover:text-white">Andrew.Lugo.Dev@gmail.com</a>.
+          </p>
           <form
             ref={formRef}
             onSubmit={handleSubmit}
@@ -75,6 +79,7 @@ const Contact = () => {
               <span className='text-white font-medium mb-4'>Your Name</span>
               <input type="text"
                 name="name"
+                required
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
@@ -85,6 +90,7 @@ const Contact = () => {
               <span className='text-white font-medium mb-4'>Your Email</span>
               <input type="email"
                 name="email"
+                required
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your email?"
@@ -94,8 +100,9 @@ const Contact = () => {
             <label className='flex flex-col'>
               <span className='text-white font-medium mb-4'>Your Message</span>
               <textarea 
-                row="7"
+                rows="7"
                 name="message"
+                required
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
@@ -103,7 +110,7 @@ const Contact = () => {
               />
             </label>
 
-            <button type="submit"
+            <button type="submit" disabled={loading}
               className='bg-electric-indigo-700 py-3 px-8 outlined-none w-fit text-white font-bold rounded-xl hover:shadow-[0_0_10px_#9c66ff] hover:bg-[#9c66ff] cursor-pointer'
             >
               {loading ? 'Sending...' : 'Send'}

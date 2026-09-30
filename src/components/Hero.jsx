@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
@@ -20,15 +18,24 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
+        <div className="max-w-3xl">
+          <p className="text-[#deccff] text-sm sm:text-base font-medium">Entry-Level Software Engineer · New Jersey</p>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#7a33ff]'>Andrew</span>
+            Hi, I'm <span className='text-[#9c66ff]'>Andrew Lugo</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white`}>
-            I build backend systems, AI-powered apps, <br className='sm:block hidden' />
-            and scalable tools
+            Backend development with Python, FastAPI, <br className='sm:block hidden' />
+            PostgreSQL, and Docker.
 
           </p>
+          <p className="mt-4 text-secondary text-sm sm:text-base">
+            B.S. in Computer Science, NJIT · Open to backend and full-stack roles
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3 pointer-events-auto">
+            <a href="#projects" className="rounded-xl bg-[#7a33ff] px-5 py-3 text-white font-semibold hover:bg-[#5900ff] transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">View Projects</a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white/40 bg-primary/70 px-5 py-3 text-white font-semibold hover:bg-white/10 transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">View Resume</a>
+            <a href="mailto:Andrew.Lugo.Dev@gmail.com" className="rounded-xl border border-white/40 bg-primary/70 px-5 py-3 text-white font-semibold hover:bg-white/10 transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Email Me</a>
+          </div>
         </div>
       </div>
 

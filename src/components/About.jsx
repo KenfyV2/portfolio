@@ -1,4 +1,3 @@
-import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -10,8 +9,8 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
     className="xs:w-[250px] w-full"
-    tiltMaxAngleX={45}
-    tiltMaxAngleY={45}
+    tiltMaxAngleX={10}
+    tiltMaxAngleY={10}
     scale={1}
     transitionSpeed={450}
   >
@@ -24,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img
           src={icon}
-          alt='web-development'
+          alt={title}
           className='w-16 h-16 object-contain'
         />
 
@@ -48,9 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Software engineer with a strong focus on backend systems, building scalable APIs and data platforms using FastAPI, PostgreSQL, and distributed architectures.
-        <br />
-        Experienced in AI-driven applications and DevOps workflows, including LLM integration, vector databases, and Docker-based deployments. Driven to build high-performance systems that solve real-world problems.
+        I earned my Bachelor of Science in Computer Science from New Jersey Institute of Technology in May 2025. I’m seeking an entry-level software engineering role, with a focus on backend development and an interest in full-stack work.
+        <br /><br />
+        My projects include REST APIs, authentication, PostgreSQL data management, AI document processing, and real-time multiplayer logic. I’ve worked in teams of two and five, using GitHub and project-tracking tools to collaborate.
+        <br /><br />
+        I currently work as a Technical Support Specialist at Hanwha Vision America. Outside work, I maintain a Proxmox homelab with Linux, Docker, reverse proxy configuration, and service monitoring.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap justify-center gap-10'>

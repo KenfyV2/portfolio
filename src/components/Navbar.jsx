@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop navigation */}
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden md:flex flex-row gap-4 lg:gap-8'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -41,7 +41,7 @@ const Navbar = () => {
                 active === link.title
                   ? "text-white"
                   : "text-white/60"
-              } hover:text-white hover:drop-shadow-[0_0_8px_#9c66ff] transition text-[18px] font-medium cursor-pointer`}
+              } hover:text-white hover:drop-shadow-[0_0_8px_#9c66ff] transition text-[15px] lg:text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>
@@ -50,7 +50,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          <li className='text-white/60 hover:text-white hover:drop-shadow-[0_0_8px_#9c66ff] transition text-[18px] font-medium cursor-pointer'>
+          <li className='text-white/60 hover:text-white hover:drop-shadow-[0_0_8px_#9c66ff] transition text-[15px] lg:text-[18px] font-medium cursor-pointer'>
             <a
               href='/resume.pdf'
               target='_blank'
@@ -62,7 +62,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile navigation */}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='md:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
             alt="menu"
