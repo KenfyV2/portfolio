@@ -31,11 +31,6 @@ const Hero = () => {
           <p className="mt-4 text-secondary text-sm sm:text-base">
             B.S. in Computer Science, NJIT · Open to backend and full-stack roles
           </p>
-          <div className="mt-6 flex flex-wrap gap-3 pointer-events-auto">
-            <a href="#projects" className="rounded-xl bg-[#7a33ff] px-5 py-3 text-white font-semibold hover:bg-[#5900ff] transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">View Projects</a>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white/40 bg-primary/70 px-5 py-3 text-white font-semibold hover:bg-white/10 transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">View Resume</a>
-            <a href="mailto:Andrew.Lugo.Dev@gmail.com" className="rounded-xl border border-white/40 bg-primary/70 px-5 py-3 text-white font-semibold hover:bg-white/10 transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Email Me</a>
-          </div>
         </div>
       </div>
 
